@@ -19,3 +19,9 @@ if(1){
     n="20"
     console.log(n)
 }
+
+//for each loop
+let names=["John","Doe","Jane"]
+names.forEach(element=>{
+    console.log(element)
+})
