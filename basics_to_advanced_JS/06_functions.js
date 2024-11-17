@@ -109,4 +109,35 @@ const add10 = makeAdder(10);
 
 console.log(add5(2)); // 7
 console.log(add10(2)); // 12
-  
+
+/*arrow function -> Arrow functions allow us to write shorter function syntax.*/
+//NOTE -> Arrow functions should not start with let or any variable declaration inside the parentheses.
+//before arrow function
+hello = function() {
+    return "Hello World!";
+}
+
+//with arrow function
+hello =() =>{
+    return "Hello World!";
+}
+console.log(hello())
+
+//with parameters
+hello = (val) => "Hello " + val;
+console.log(hello('World'))
+
+/** QUESTION -> Write a function sumPositiveNumbers(arr) that takes an array of numbers and returns the sum of all positive numbers using filter() and reduce() with arrow functions */
+
+//NOTE -> in num=> num> 0 -> num is the parameter,=> is the arrow function, num>0 is the condition
+function sumPositiveNumbers(arr) {
+    return arr.filter(num => num > 0) // Filter out positive numbers
+    .reduce(sumofArray); // Sum the positive numbers
+
+    function sumofArray(sum, num) { 
+        return sum + num;
+    }
+}
+
+// Example usage:
+console.log(sumPositiveNumbers([1, -2, 3, 4, -5, 6])); // Output: 14

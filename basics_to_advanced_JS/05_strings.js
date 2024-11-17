@@ -38,3 +38,21 @@ let str2 = "banana";
 let result = str1.localeCompare(str2);
 console.log(result); // -1 because apple is lexicographically smaller than banana
 
+//find the number of vowels in a string
+function countVowels(str) {
+    const count=str.match(/[aeiou]/gi); //g->global, i->case insensitive (both are flags)
+    return count ? count.length : 0;
+}
+console.log(countVowels('Hello World')) //3
+
+
+function countVowels2(str) {
+    let count = 0;
+    const vowels = 'aeiouAEIOU';
+    for (let char of str) {
+        if (vowels.includes(char)) {
+        count++;
+        }
+    }
+    return count;
+}
