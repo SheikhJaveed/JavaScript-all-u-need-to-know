@@ -31,3 +31,10 @@ const myString="Hello-World"
 console.log(myString.split('-')) //splits the string into an array
 
 //more methods available on MDN documentation
+
+/*string.localeCompare()-> The string.localeCompare() is an inbuilt method in JavaScript that is used to compare any two elements and returns a positive number if the reference string is lexicographically greater than the compare string and a negative number if the reference string is lexicographically smaller than the compare string and zero (0) if the compare and reference strings are equivalent. */
+let str1 = "apple";
+let str2 = "banana";
+let result = str1.localeCompare(str2);
+console.log(result); // -1 because apple is lexicographically smaller than banana
+
