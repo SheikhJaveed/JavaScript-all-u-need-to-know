@@ -18,3 +18,20 @@ console.log(typeof name1)
 console.log(typeof null) //object
 console.log(typeof undefined)
 console.log(typeof true)
+
+console.log(typeof typeof age) //string
+
+//check if a variable is a number or string
+function whatAmI(input) {
+    let x=typeof input; //if input is a number, x will be 'number' and if input is a string, x will be 'string'
+    if(x==='number'){  //'number'==='number' -> true
+        return "I'm a number"
+    }
+    else{
+        return "I'm a string"
+    }
+}
+
+console.log(whatAmI(20))
+console.log(whatAmI("John"))
+console.log(whatAmI('123'));
