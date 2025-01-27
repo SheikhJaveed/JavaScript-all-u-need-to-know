@@ -35,5 +35,5 @@ This repository is designed to guide learners through the journey of mastering J
 ## How to Use  
 
 1. Clone this repository:  
-   > git clone https://github.com/yourusername/javascript-all-u-need-to-know.git
+   > git clone https://github.com/SheikhJaveed/javascript-all-u-need-to-know.git
 2. Navigate through the folders to explore different topics.
