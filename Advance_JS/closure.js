@@ -6,6 +6,7 @@ function outer() {
     };
 }
 
+
 console.log("Closure");
 let increment = outer(); // `increment` is assigned the inner function
 console.log(increment()); // 5
