@@ -1,0 +1,115 @@
+/* 🎨 General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🌙 Dark Theme */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 📦 Quiz Container */
+#quiz-container {
+    max-width: 500px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    margin: auto;
+}
+
+/* 📝 Question Styling */
+#question-text {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* 📜 Choices List */
+#choices-list {
+    list-style: none;
+    padding: 0;
+}
+
+#choices-list li {
+    background: #2771bb;
+    color: white;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: 1px solid #444;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Hover Effect */
+#choices-list li:hover {
+    background: #1b5fa3;
+    transform: scale(1.05);
+}
+
+/* 🌟 Selected Option */
+/* 🌟 Selected Option */
+.selected {
+    background-color: #590bea !important; /* Blue background for selected option */
+    color: white; /* Keep text color white */
+    font-weight: bold;
+    border: 2px solid #0056b3;
+}
+
+
+/* 🎯 Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 🚀 Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* 🎯 Next Button */
+#next-btn {
+    margin-top: 20px;
+}
+
+/* 🎯 Restart Button */
+#restart-btn {
+    background-color: #dc3545;
+}
+
+#restart-btn:hover {
+    background-color: #c82333;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+    #quiz-container {
+        width: 90%;
+    }
+    #choices-list li {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
