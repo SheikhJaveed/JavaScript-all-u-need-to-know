@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const li=document.createElement('li');
         li.textContent=choice;
         li.addEventListener('click',()=>selectAnswer(li,choice)); //we are passing function as a reference here 
-        //Note: if we write li.addEventListener('click',selectAnswer(choice)); then it will call the function immediately. Solution -> use a callback like ()=>selectAnswer(choice)
+        //Note: if we write li.addEventListener('click',selectAnswer(li,choice)); then it will call the function immediately. Solution -> use a callback like ()=>selectAnswer(li,choice)
         choicesList.appendChild(li);
     })
 
